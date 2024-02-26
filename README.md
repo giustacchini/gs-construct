@@ -17,7 +17,7 @@ Project name: GS Construct
 
 Project type: Website - personal project
 
-Project purpose: Creating a responsive website
+Project purpose: Create a responsive website
 
 Year: 2021
 
