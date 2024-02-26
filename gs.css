@@ -148,15 +148,15 @@ body{
 }
 
 .website {
-    background-image: url('file:///C:/Users/Vladimir/Desktop/site/Pictures/website.svg');
+    background-image: url(./Pictures/website.svg);
 }
 
 .mail {
-    background-image: url('file:///C:/Users/Vladimir/Desktop/site/Pictures/mail.svg');
+    background-image: url(./Pictures/mail.svg);
 }
 
 .phone {
-    background-image: url('file:///C:/Users/Vladimir/Desktop/site/Pictures/phone.svg');
+    background-image: url(./Pictures/phone.svg);
 }
 
 @media screen and (max-width:1200px) {
