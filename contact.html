@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gs.css"/>
+    <title>Contact - GS Construct AB</title>
+    <link rel="icon" href="Pictures/gsconstruct_logo_notext_black.png" /> 
+    <script src="gs.js"></script>
+</head>
+<body style="margin:0">
+    <div class="navbar" id="homeNav">
+        <a href="mainpage.html" id="home"><img src="Pictures/gsconstruct_logo_notext_white.png"/></a>
+        <div class="links">
+            <a href="contact.html">Contact</a>
+            <a href="projects.html">Projects</a>
+            <a href="aboutus.html">About us</a>
+        </div>
+        <a href="javascript:void(0)" class="menu" onclick="respFunc()"><img src="Pictures/menu.svg"/></a>
+    </div>
+    <div style="height: 6vh; padding: 2vw; background-color: black"></div>
+    <div class="ct-container">
+        <h3>Contact</h3>
+        <div class="ct-contact-form">
+            <form action="mailto:info@gsconstruct.se" method="post" enctype="text/plain">
+                <label for="fname">First name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Enter your first name..." required/>
+
+                <label for="lname">Last name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Enter your last name..." required/>
+
+                <label for="email">E-mail</label>
+                <input type="text" placeholder="Enter your e-mail..." name="email" id="email" required/>
+
+                <label for="country">Country</label>
+                <select id="country" name="country" required>
+                    <option value="sweden">Sweden</option>
+                </select>
+
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something..." style="height:200px" required></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+    <style>
+        .ct-container{
+            font-size: 2em;
+            letter-spacing: 0.1em;
+        }
+        .ct-container h3{
+            padding-left: 0.5em;
+        }
+        /* Style inputs with type="text", select elements and textareas */
+        .ct-contact-form input[type=text], select, textarea {
+            width: 100%; /* Full width */
+            padding: 12px; /* Some padding */
+            border: 1px solid #ccc; /* Gray border */
+            border-radius: 4px; /* Rounded borders */
+            box-sizing: border-box; /* Make sure that padding and width stays in place */
+            margin-top: 6px; /* Add a top margin */
+            margin-bottom: 16px; /* Bottom margin */
+            resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+        }
+
+        /* Style the submit button with a specific background color etc */
+        .ct-contact-form input[type=submit] {
+            background-color: rgba(153,0,0,1);
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-family: Teko;
+            font-size: 1em;
+        }
+
+            /* When moving the mouse over the submit button, add a darker green color */
+            .ct-contact-form input[type=submit]:hover {
+                background-color: rgba(153,0,0,0.8);
+            }
+
+        /* Add a background color and some padding around the form */
+        .ct-contact-form {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+    </style>
+    <div class="footer">
+        <div class="col left">
+            <img id="footer-logo" src="Pictures/gsconstruct_logo_notext_white.png" />
+        </div>
+        <div class="col right">
+            <h1>GS Construct AB</h1>
+            <ul class="info">
+                <li class="website"><a href="http://gsconstruct.se">gsconstruct.se</a></li>
+                <li class="mail"><a href="mailto:info@gsconstruct.se">info@gsconstruct.se</a></li>
+                <li class="phone"><a href="tel:+46768136040">+46 (0)76-813 60 40</a></li>
+            </ul>
+            <p>&copy; GS Construct AB - 2021</p>
+        </div>
+    </div>
+    <script src="gs.js"></script>
+</body>
+</html>

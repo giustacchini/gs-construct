@@ -1,0 +1,7 @@
+<svg width="50" height="50" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <rect width="50" height="50" style="fill:black"></rect>
+  <ellipse cx="35" cy="0" rx="20" ry="10" style="fill:white" transform="rotate(45)"></ellipse>
+  <rect x="14" y="-12" width="40" height="12" transform="rotate(45)" style="fill:black"></rect>
+  <ellipse cx="22" cy="-1" rx="7" ry="5" style="fill:white" transform="rotate(45)"></ellipse>
+  <ellipse cx="47" cy="-1" rx="8" ry="5" style="fill:white" transform="rotate(45)"></ellipse>
+    </svg>

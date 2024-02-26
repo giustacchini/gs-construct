@@ -1,0 +1,309 @@
+body{
+    z-index:1;
+    font-family: Teko;
+}
+.slideshow {
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+    .slideshow .title {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+.title {
+    color: white;
+    letter-spacing: 2vw;
+    text-transform: uppercase;
+    /*font-family: Pirulen;*/
+    font-family: Teko;
+    padding: 3vw;
+    font-size: 2vw;
+    background: rgba(0,0,0,0.9);
+}
+
+.slide {
+    display: none;
+    position: relative;
+    animation: ltr 10s;
+}
+
+    .slide div {
+    }
+
+@keyframes ltr {
+    0% {
+        left: -100%;
+    }
+
+    1% {
+        left: -100%;
+    }
+
+    20% {
+        left: 0%;
+    }
+
+    50% {
+        left: 0%;
+    }
+
+    80% {
+        left: 0%;
+    }
+
+    99% {
+        left: -100%;
+    }
+
+    100% {
+        left: -100%;
+    }
+}
+
+.footer {
+    background-color: black;
+    color: white;    
+}
+
+.col {
+    float: left;
+}
+
+.left {
+    width: 25%;
+}
+
+.right {
+    width: 75%;
+}
+
+.footer:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#footer-logo {
+    width: 10vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3vw;
+    height: 100%;
+    vertical-align: middle;
+    line-height: 100%;
+}
+
+.info {
+    line-height: 1.5;
+}
+
+    .info li {
+        /*font-family: 'Adventure Subtitles';*/
+        font-family: Teko;
+        font-size: 1.5em;
+        list-style: none;
+        background-size: contain;
+        background-repeat: no-repeat;
+        letter-spacing: 0.05vw;
+    }
+
+        .info li::before {
+            content: '';
+            display: inline-block;
+            width: 1em;
+            height: 1em;
+            margin-left: 1em;
+        }
+
+    .info a {
+        color: white;
+        text-decoration: none;
+    }
+
+.footer h1 {
+    text-align: center;
+    font-size: 2vw;
+    /*font-family: Pirulen;*/
+    font-family: Teko;
+}
+.footer a:hover{
+    color: rgba(153,0,0,0.5);
+}
+
+.website {
+    background-image: url('file:///C:/Users/Vladimir/Desktop/site/Pictures/website.svg');
+}
+
+.mail {
+    background-image: url('file:///C:/Users/Vladimir/Desktop/site/Pictures/mail.svg');
+}
+
+.phone {
+    background-image: url('file:///C:/Users/Vladimir/Desktop/site/Pictures/phone.svg');
+}
+
+@media screen and (max-width:1200px) {
+    .col {
+        width: 100%;
+    }
+    #footer-logo{
+        padding-bottom: 0;
+    }
+}
+
+.footer p {
+    /*font-family: 'Adventure Subtitles';*/
+    font-family: Teko;
+    text-align: center;
+}
+
+.navbar {
+    background: rgba(0,0,0,0.9);
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    /*font-family: Pirulen;*/
+    font-family: Teko;
+    z-index: 2;
+    }
+.navbar a{
+    float: right;
+    line-height: 6vh;
+    padding: 2vw;
+    color: white;
+    font-size:2vw;
+    text-align:center;
+    text-decoration: none;
+    height: 6vh;
+}
+    .navbar #home {
+        float: left;
+    }
+.navbar #home img{
+    height: 6vh;
+    vertical-align: middle;
+}
+    .navbar a:hover {
+        background: rgba(153,0,0,0.5);
+    }
+
+.navbar .menu{
+    display:none;
+}
+.navbar .menu img{
+    height: 6vh;
+    vertical-align: middle;
+}
+
+@media screen and (max-width:1200px){
+    .navbar .menu{
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .links{
+        display: none;
+    }
+    .navbar.responsive{
+        height: 100vh;
+        background-color: black;
+    }
+    .navbar.responsive .links{
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        height: 50vh;
+        justify-content: center;
+    }
+    .navbar.responsive .links a{
+        width: 100%;
+        font-size: 5vh;
+    }
+}
+img {
+    pointer-events: none;
+}
+
+
+.abt-container {
+    font-size: 2em;
+    letter-spacing: 0.1em;
+}
+
+    .abt-container h3 {
+        padding-left: 0.5em;
+    }
+
+.abt-parsingle {
+    padding: 0.5em;
+    padding-top: 0;
+}
+
+
+.prj-container {
+    font-size: 2em;
+    letter-spacing: 0.1em;
+}
+
+    .prj-container h3 {
+        padding-left: 0.5em;
+    }
+
+.prj-col {
+    float: left;
+    width: 33.33%;
+}
+
+.prj-row {
+    padding-bottom: 2vh;
+}
+
+    .prj-row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+@media screen and (max-width:1200px) {
+    .prj-col {
+        width: 100%;
+        padding-bottom: 2vh;
+    }
+
+    .prj-row {
+        padding-bottom: 0;
+    }
+}
+
+.prj-card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 80%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2vw;
+}
+
+.prj-card-info {
+    padding: 2vw 1vw;
+}
